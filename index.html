@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>서세호 자기소개</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contant</a></li>
+                <li><a href="https://github.com/" class="code-btn">code</a></li>
+            </ul>
+            
+        </nav>
+        <div class="bar-bg"></div>
+    </header>
+    <div class="cont-intro">
+        <a name="info"></a>
+            <img src="./src/img/image.png" alt="프로필 이미지" class="intro-face"/>
+            <div>
+                <p class="txt-title"></p>
+            </div>
+    </div>
+    <section id="about">
+        <h2 class="about-title">about</h2>
+        <div class="about-container">
+            <!-- 중앙 프로필 카드 -->
+            <div class="profile-box">
+                <img src="./src/img/image.png" alt="프로필 이미지" class="profile-img">
+                <div class="profile-info">
+                    <p><span>이름</span> 서세호</p>
+                    <p><span>생년월일</span> 2012.11.21</p>
+                    <p><span>성별</span> 남자</p>
+                    <p><span>거주지</span> 대한민국 대구</p>
+                    
+                </div>
+            </div>
+            
+            <!-- 좌측 카드 (MBTI) -->
+            <div class="info-card left container">
+                <img src="./src/img/mbit.png" alt="MBTI 이미지" class="inner">
+                <p class="info-title inner">ESTP</p>
+                <p class="info-sub inner">MBTI</p>
+            </div>
+    
+            <!-- 우측 카드 (취미) -->
+            <div class="info-card right container">
+                <img src="./src/img/image copy.png" alt="취미 이미지" class="habby inner">
+                <p class="info-title2 inner">게임 & 코딩</p>
+                <p class="info-sub2 inner">취미</p>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <h2 class="project-title">project</h2>
+    
+        <!-- 버튼 -->
+        <div class="project-buttons">
+            <button class="toggle-btn " data-target="project1">프로젝트 1</button>
+            <button class="toggle-btn" data-target="project2">프로젝트 2</button>
+        </div>
+    
+        <!-- 프로젝트 1 내용 -->
+        <div id="project1" class="project-box hidden">
+            <img src="./src/img/image copy 4.png" alt="프로젝트 1 이미지">
+            <div class="project-desc">
+                <h3>프로젝트 1</h3>
+                <p>이 프로젝트는 JS를 활용하여 만든 디스코드 봇 입니다.</p>
+            </div>
+        </div>
+    
+        <!-- 프로젝트 2 내용 -->
+        <div id="project2" class="project-box hidden">
+            <img src="./src/img/image copy 3.png" alt="프로젝트 2 이미지">
+            <div class="project-desc">
+                <h3>프로젝트 2</h3>
+                <p>이 프로젝트는 html,css,js기반으로 만든 간단한 로또번호 추첨 사이트입니다.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact-icons">
+          <!-- 이메일 -->
+          <div class="contact-wrapper">
+            <div class="contact-icon" id="emailBtn" title="Email">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <p class="contact-text hidden" id="emailText">ssho121121@gmail.com</p>
+          </div>
+      
+          <!-- 전화번호 -->
+          <div class="contact-wrapper">
+            <div class="contact-icon" id="phoneBtn" title="Phone">
+              <i class="fas fa-phone"></i>
+            </div>
+            <p class="contact-text hidden" id="phoneText">010-7540-4106</p>
+          </div>
+      
+          <!-- 인스타그램 -->
+          <a href="https://www.instagram.com/saeho12" target="_blank" class="contact-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+      
+          <!-- 카카오톡 -->
+          <a href="https://open.kakao.com/o/your_link" target="_blank" class="contact-icon" title="KakaoTalk">
+            <i class="fas fa-comment"></i>
+          </a>
+        </div>
+      </section>
+       
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</body>
+</html>
